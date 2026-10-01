@@ -10,7 +10,7 @@ export function LatestPosts() {
       <GradientText className="text-[22px] font-bold">
         Latest Posts
       </GradientText>
-      <div className="mt-5 grid gap-3.5 sm:grid-cols-2 xl:ml-12 xl:w-full">
+      <div className="mt-5 grid gap-3.5 sm:grid-cols-2">
         {posts.length > 0 ? (
           posts.map((post) => (
             <BlogPostCard key={post.slug} post={post} compact />
