@@ -46,7 +46,7 @@ export function Navbar() {
             className="p-2"
             aria-label="打开 GitHub"
           >
-            <GithubIcon className="size-4 text-[var(--muted)]" />
+            <GithubIcon className="size-[19px] text-[var(--muted)]" />
           </StarBorder>
           <ThemeSwitcher />
         </div>
@@ -74,7 +74,7 @@ export function Navbar() {
                 rel="noopener noreferrer"
                 className="focus-ring flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-[var(--muted)] hover:bg-[var(--card)]"
               >
-                <GithubIcon className="size-4" />
+                <GithubIcon className="size-[19px]" />
                 GitHub
               </a>
             </div>

@@ -30,7 +30,7 @@ export function ThemeSwitcher() {
       aria-label={theme === "dark" ? "切换为浅色模式" : "切换为深色模式"}
     >
       {theme === "dark" ? (
-        <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="size-[19px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -39,7 +39,7 @@ export function ThemeSwitcher() {
           />
         </svg>
       ) : (
-        <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="size-[19px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"

@@ -1,37 +1,25 @@
 import { GithubIcon } from "@/components/icons";
 import { GradientText } from "@/components/gradient-text";
-import { ParticleBackground } from "@/components/particle-background";
 import { StarBorder } from "@/components/star-border";
 import { siteConfig } from "@config/site";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[60vh] items-center justify-center overflow-hidden">
-      <ParticleBackground
-        dotRadius={1.5}
-        dotSpacing={14}
-        cursorRadius={500}
-        bulgeOnly
-        bulgeStrength={67}
-        sparkle
-        gradientFrom="rgba(168, 85, 247, 0.35)"
-        gradientTo="rgba(59, 130, 246, 0.25)"
-        glowColor="rgba(168, 85, 247, 0.15)"
-      />
-      <div className="relative z-10 px-4 text-center">
-        <GradientText className="mx-auto text-5xl font-bold tracking-tight sm:text-6xl">
+    <section className="flex min-h-[60svh] items-center justify-center lg:min-h-0 lg:justify-start">
+      <div className="relative z-10 w-full py-12 text-center lg:py-0 lg:text-left">
+        <GradientText className="mx-auto text-5xl font-bold tracking-tight sm:text-[52px] lg:mx-0">
           {siteConfig.name}
         </GradientText>
-        <p className="mt-4 text-lg text-[var(--muted)]">
+        <p className="mt-4 text-base text-[var(--muted)]">
           {siteConfig.description}
         </p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5 lg:mt-6 lg:justify-start">
           <StarBorder
             href="/blog"
             color="#a855f7"
             speed="5s"
             thickness={2}
-            className="text-sm"
+            className="text-[13px] [&>span:last-child]:px-5 [&>span:last-child]:py-2.5"
           >
             Read the Blog
           </StarBorder>
@@ -42,10 +30,10 @@ export function Hero() {
             color="#3b82f6"
             speed="5s"
             thickness={2}
-            className="text-sm"
+            className="text-[13px] [&>span:last-child]:px-5 [&>span:last-child]:py-2.5"
           >
-            <span className="flex items-center gap-2">
-              <GithubIcon className="size-4" />
+            <span className="flex items-center gap-1.5">
+              <GithubIcon className="size-3.5" />
               GitHub
             </span>
           </StarBorder>

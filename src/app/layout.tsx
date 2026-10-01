@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import type { ReactNode } from "react";
 import { Footer } from "@/components/footer";
+import { HomeParticleBackground } from "@/components/home-particle-background";
 import { Navbar } from "@/components/navbar";
 import { siteConfig } from "@config/site";
 import "./globals.css";
@@ -34,8 +35,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className={`${inter.variable} font-sans antialiased`}>
         <div className="flex min-h-screen flex-col">
           <Navbar />
-          <main className="flex-1">{children}</main>
-          <Footer />
+          <div className="relative flex flex-1 flex-col">
+            <HomeParticleBackground />
+            <main className="relative z-10 flex-1">{children}</main>
+            <div className="relative z-10">
+              <Footer />
+            </div>
+          </div>
         </div>
       </body>
     </html>
